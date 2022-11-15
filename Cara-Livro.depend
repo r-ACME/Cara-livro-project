@@ -1,0 +1,142 @@
+# depslib dependency file v1.0
+1668084052 source:/home/ubuntu/Documents/aulas/Cara-Livro/arvore.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"arvore.h"
+
+1668084083 /home/ubuntu/Documents/aulas/Cara-Livro/arvore.h
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
+1668086158 source:/home/ubuntu/Documents/aulas/Cara-Livro/caralivrocadastro.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"caralivropattern.h"
+	"caralivrocadastro.h"
+
+1668085044 /home/ubuntu/Documents/aulas/Cara-Livro/caralivropattern.h
+
+1668085788 /home/ubuntu/Documents/aulas/Cara-Livro/caralivrocadastro.h
+
+1668086164 source:/home/ubuntu/Documents/aulas/Cara-Livro/caralivromain.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"caralivropattern.h"
+	"caralivrocadastro.h"
+
+1668086112 source:/home/ubuntu/Documents/aulas/Cara-Livro/caralivropattern.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"caralivropattern.h"
+
+1668085894 source:/home/ubuntu/Documents/aulas/Cara-Livro/main.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+	"caralivropattern.h"
+
+1668094733 /home/ubuntu/Documents/aulas/Cara-Livro/define.h
+
+1668083980 source:/home/ubuntu/Documents/aulas/Cara-Livro/pilha.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"pilha.h"
+
+1668084008 /home/ubuntu/Documents/aulas/Cara-Livro/pilha.h
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
+1668084720 source:/home/ubuntu/Documents/aulas/Cara-Livro/util.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1668094722 source:/home/ubuntu/Documents/aulas/Cara-Livro/data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"data.h"
+
+1668094676 /home/ubuntu/Documents/aulas/Cara-Livro/data.h
+	"define.h"
+
+1668084052 source:d:\documentos\ufmg\coltec\cara-livro\arvore.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"arvore.h"
+
+1668084083 d:\documentos\ufmg\coltec\cara-livro\arvore.h
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
+1668086158 source:d:\documentos\ufmg\coltec\cara-livro\caralivrocadastro.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"caralivropattern.h"
+	"caralivrocadastro.h"
+
+1668085044 d:\documentos\ufmg\coltec\cara-livro\caralivropattern.h
+
+1668085788 d:\documentos\ufmg\coltec\cara-livro\caralivrocadastro.h
+
+1668086164 source:d:\documentos\ufmg\coltec\cara-livro\caralivromain.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"caralivropattern.h"
+	"caralivrocadastro.h"
+
+1668086112 source:d:\documentos\ufmg\coltec\cara-livro\caralivropattern.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"caralivropattern.h"
+
+1668085894 source:d:\documentos\ufmg\coltec\cara-livro\main.c
+	<stdio.h>
+	<stdlib.h>
+	"define.h"
+	"caralivropattern.h"
+
+1668094733 d:\documentos\ufmg\coltec\cara-livro\define.h
+
+1668083980 source:d:\documentos\ufmg\coltec\cara-livro\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"pilha.h"
+
+1668084008 d:\documentos\ufmg\coltec\cara-livro\pilha.h
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
+1668084720 source:d:\documentos\ufmg\coltec\cara-livro\util.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1668518038 source:d:\documentos\ufmg\coltec\cara-livro\data.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"data.h"
+
+1668518051 d:\documentos\ufmg\coltec\cara-livro\data.h
+	"define.h"
+
