@@ -2,21 +2,34 @@
 #define DATA_H_INCLUDED
 
 #include "define.h"
+#include "data.h"
 
 #pragma once
 
 typedef unsigned char bool_t;
 
+typedef struct likes_s likes_t;
 struct likes_s{ //Estrutura para armazenar se 1 usuário curtiu o post
     int id_user;
     bool_t like;
-}; typedef struct likes_s likes_t;
+};
+
+//Lista do Hash
+typedef struct lista_likes_s lista_likes_t;
+struct lista_likes_s{ //Estrutura para armazenar a relação de varias curtidas em 1 post
+    likes_t user;
+    lista_likes_t *next_like;
+    int qtd_likes;
+};
 
 //Hash
 typedef struct hash_likes_s hash_likes_t;
 struct hash_likes_s{ //Estrutura para armazenar a relação de varias curtidas em 1 post
-    likes_t *user;
-    hash_likes_t *next_like;
+    int size_pattern;
+    int pattern;
+    lista_likes_t *likes;
+    hash_likes_t *next_pattern;
+    int qtd_likes;
 };
 
 struct date_s{ //Estrutura para armazenar e preencher uma data para as publicações
@@ -76,6 +89,7 @@ bool_t valida_senha(char user[TAM_MAX], char password[TAM_MAX_SENHA]);
 bool_t preenche_perfil(profile_t * profile, profile_t new_profile);
 int conta_likes(hash_likes_t *recived);
 bool_t grava_post(post_t *novo, post_t *new_post);
+bool_t grava_like(likes_t *novo, likes_t new_like);
 bool_t preenche_data(date_t * date, date_t new_date);
 bool_t preenche_data_post(date_t *date);
 bool_t imprime_data_post(date_t *date);

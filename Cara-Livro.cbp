@@ -52,10 +52,10 @@
 		</Unit>
 		<Unit filename="data.h" />
 		<Unit filename="define.h" />
-		<Unit filename="fila.c">
+		<Unit filename="hash.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="fila.h" />
+		<Unit filename="hash.h" />
 		<Unit filename="lista.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -63,10 +63,6 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="pilha.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="pilha.h" />
 		<Unit filename="util.c">
 			<Option compilerVar="CC" />
 		</Unit>

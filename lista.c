@@ -13,8 +13,6 @@
 #include "lista.h"
 
 /* Constantes */
-#define SUCESSO 0
-#define TAM_MAXIMO 30
 
 /* Tipos */
 
@@ -30,6 +28,19 @@ bool_t lista_cria(my_posts_t **lista) {
     (*lista)->my_post = NULL;
     (*lista)->next_post = NULL;
     (*lista)->qtd_posts = 0;
+}
+
+/**
+ * Função de criação.
+ * @param lista Pointer pointer da lista de likes a ser criada
+ * @return Lista vazia.
+ */
+bool_t lista_cria_like(lista_likes_t **lista) {
+    (*lista) = malloc(sizeof(lista_likes_t));
+
+    (*lista)->user.id_user = 0;
+    (*lista)->user.like = FALSO;
+    (*lista)->next_like = NULL;
 }
 
 /**
@@ -94,6 +105,24 @@ bool_t lista_imprime_posts(my_posts_t *user) {
     }
 
     return VERDADEIRO;
+}
+
+/**
+ * Função que verifica se usuário deu like
+ * @param user Lista de postagens
+ */
+bool_t lista_confere_user(lista_likes_t *lista, likes_t user) {
+
+    lista_likes_t *current = lista;
+
+    while ((current != NULL) && (current->user).id_user != user.id_user) {
+        current = current->next_like;
+    }
+
+    if(current->user.id_user == user.id_user){
+        return VERDADEIRO;
+    }
+    return FALSO;
 }
 
 
@@ -199,3 +228,66 @@ bool_t lista_insere_inicio_post(my_posts_t *posts, post_t* new_post) {
     (*posts).qtd_posts += 1;
     return VERDADEIRO;
 }
+
+
+/**
+ * Função que insere um item em ordem na lista de likes.
+ * @return Lista atualizada com o novo item.
+ */
+bool_t lista_insere_ordenado_like(lista_likes_t *likes, likes_t new_like) {
+
+    lista_likes_t *novo;
+    lista_likes_t *previous = NULL;
+    lista_likes_t *current = likes;
+
+    while( (current->user).id_user >= new_like.id_user && current != NULL){
+        previous = current;
+        current = current->next_like;
+    }
+
+    novo = (lista_likes_t *) malloc(sizeof(lista_likes_t));
+    grava_like( &novo->user, new_like );
+
+    if(current->user.id_user == new_like.id_user){
+        return FALSO;
+    }
+
+    if(previous == NULL){
+       novo->next_like = likes->next_like;
+       likes = novo;
+    }
+    else{
+        previous->next_like = novo;
+        novo->next_like = current;
+    }
+
+    (*likes).qtd_likes++;
+
+    return VERDADEIRO;
+}
+
+
+/**
+ * Função que remove um item da lista de likes.
+ * @return Lista atualizada com o novo item.
+ */
+bool_t lista_remove_like(lista_likes_t *likes, likes_t like_to_remove) {
+
+    lista_likes_t *previous = NULL;
+    lista_likes_t *current = likes;
+
+    while( (current->user).id_user >= like_to_remove.id_user && current != NULL){
+        previous = current;
+        current = current->next_like;
+    }
+
+    if(current->user.id_user == like_to_remove.id_user){
+        previous->next_like = current->next_like;
+        free(current);
+        return VERDADEIRO;
+    }
+    return FALSO;
+}
+
+
+

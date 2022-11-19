@@ -111,7 +111,7 @@
 	"define.h"
 	"caralivropattern.h"
 
-1668094733 d:\documentos\ufmg\coltec\cara-livro\define.h
+1668853506 d:\documentos\ufmg\coltec\cara-livro\define.h
 
 1668083980 source:d:\documentos\ufmg\coltec\cara-livro\pilha.c
 	<stdio.h>
@@ -130,13 +130,41 @@
 	<stdlib.h>
 	<string.h>
 
-1668518038 source:d:\documentos\ufmg\coltec\cara-livro\data.c
+1668858908 source:d:\documentos\ufmg\coltec\cara-livro\data.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<time.h>
 	"data.h"
 
-1668518051 d:\documentos\ufmg\coltec\cara-livro\data.h
+1668858922 d:\documentos\ufmg\coltec\cara-livro\data.h
 	"define.h"
+	"data.h"
+
+1668853252 source:d:\documentos\ufmg\coltec\cara-livro\lista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"data.h"
+	"define.h"
+	"lista.h"
+
+1668517131 d:\documentos\ufmg\coltec\cara-livro\lista.h
+	"define.h"
+	"data.h"
+
+1668858641 source:d:\documentos\ufmg\coltec\cara-livro\hash.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"data.h"
+	"define.h"
+	"hash.h"
+	"lista.h"
+
+1668852997 d:\documentos\ufmg\coltec\cara-livro\hash.h
+	"define.h"
+	"data.h"
 

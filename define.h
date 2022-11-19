@@ -9,7 +9,7 @@
 #define TAM_MAX_POST 255 + 1
 #define VERDADEIRO (1==1)
 #define FALSO !VERDADEIRO
-
+#define MAX_PATTERN_HASH 100
 
 
 

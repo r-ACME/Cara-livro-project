@@ -52,6 +52,7 @@ bool_t preenche_perfil(profile_t * profile, profile_t new_profile){
  * Funções para struct de postagem
  */
 
+ /* Função não será mais utilizada pois será utilizado um campo para contar as curtidas
 int conta_likes(hash_likes_t *recived){
     likes_t *current = recived->user;
     hash_likes_t *next = recived->next_like;
@@ -68,7 +69,7 @@ int conta_likes(hash_likes_t *recived){
         next = (*next).next_like;
     }
     return count;
-}
+}*/
 
 bool_t grava_post(post_t *novo, post_t *new_post){
 
@@ -82,6 +83,14 @@ bool_t grava_post(post_t *novo, post_t *new_post){
     return VERDADEIRO;
 }
 
+
+bool_t grava_like(likes_t *novo, likes_t new_like){
+
+    novo->id_user = new_like.id_user;
+    novo->like = new_like.like;
+
+    return VERDADEIRO;
+}
 
 
 
